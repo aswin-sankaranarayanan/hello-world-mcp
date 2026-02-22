@@ -6,10 +6,10 @@ import asyncio
 import sys
 import os
 
-# Add the current directory to Python path so we can import from main.py
+# Add the current directory to Python path so we can import from services
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from main import WeatherService
+from services.weather_service import WeatherService
 
 async def test_weather():
     """Test weather service directly"""
